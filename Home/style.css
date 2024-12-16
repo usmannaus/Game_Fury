@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=sawp');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background: #050e2d;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 4px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1b2141;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+header .logo{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+header .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+header ul li{
+    list-style: none;
+    margin: 10px;
+ }
+
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding:5px 10px;
+    border-radius: 5px;
+}
+
+header ul li a:hover{
+    background: #1aeeef;
+    color: #050e2d;
+    box-shadow: 0 0 10 #1aeeef;
+}
+
+header .action .searchbox{
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    border-radius: 5px;
+}
+
+header .action .searchbox i{
+    font-size: 1.4em;
+    margin: 5px;
+    color: #222;
+}
+
+header .action .searchbox input{
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: #222;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .bg{
+     position: relative;
+     width: 100%;
+     min-height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.banner .bg .content{
+    width: 60%;
+    height: 100%;
+}
+
+.banner .bg .content h2{
+    font-size: 2em;
+    text-align: justify;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin-top: 10%;
+}
+
+.banner .bg .content h2 span{
+    color: #00d4ff;
+}
+
+.banner .bg .content p{
+    font-size: 1.1em;
+    text-align: justify;
+    color: #dbd9d9;
+    letter-spacing: 1px;
+    margin-right: 10%;
+}
+
+.banner .bg .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 1px solid #1aeeef;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.banner .bg .content a:hover{
+    background: #1aeeef;
+    border: none;
+    color: #050e2d;
+    box-shadow: 0 0 10px #1aeeef;
+}
+
+.banner .bg img{
+    width: 500px;
+    padding-top: 10%;
+}
+
+.services .heading{
+    text-align: center;
+    text-transform:uppercase;
+    color:#fff;
+    font-size: 50px;
+}
+
+.services .heading span{
+    color: #1aeeef;
+}
+
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1rem;
+    background-color:#050e2d;
+    margin: .5rem;
+}
+
+.services .box-container .box{
+    padding: 3rem;
+    text-align: center;
+    border: 20px;
+    border-radius: 10px; 
+    background: #1b338b; 
+    transition: 0.3s; 
+}
+
+.services .box-container .box img{
+    height: 10rem;
+}
+
+.services .box-container .box h3{
+    color:#fff;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.services .box-container .box p{
+    color: #fff;
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: justify;
+}
+
+.services .box-container .box .price{
+    color: #fff;
+    font-size: 1.5rem;
+    padding: .5rem 0;
+}
+
+.services .box-container .box .price span{
+    color: #ff0000;
+    font-size: 1rem;
+    text-decoration: line-through;
+}
+
+.services .box-container .box:hover{
+    background: #2f57e8;
+}
+
+.services .box-container .box:hover > *{
+    color:#ffffff;
+}
+
+.box-container a{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: 2px solid #fff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.box-container a:hover{
+    background: #3b3b3b;
+    color: #050e2d;
+    box-shadow: 0 0 10 #1aeeef;
+}
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: #f0f0f0;
+    padding: 30px 0;
+    border-top: 2px solid #1b2141;
+}
